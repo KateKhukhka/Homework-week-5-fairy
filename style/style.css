@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Antikvarika";
+  src: url("../assets/fonts/antikvarika.eot"); /* IE 9 Compatibility Mode */
+  src: url("../assets/fonts/antikvarika.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("../assets/fonts/antikvarika.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/antikvarika.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../assets/fonts/antikvarika.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/antikvarika.svg#antikvarika")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+:root {
+  font-family: "Antikvarika", serif;
+}
+body {
+  background-image: url(../assets/image/wall2.webp);
+  background-size: contain;
+  font-size: 16px;
+}
+.header {
+  display: flex;
+  background-color: rgb(243, 215, 243);
+  font-size: 24px;
+  color: #7a1901;
+  width: 100vw;
+
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0px 10px 0px;
+}
+.logo {
+  width: 16px;
+}
+.title {
+  font-weight: 600;
+  font-size: 26px;
+}
+.navigation {
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  width: 50vw;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+li {
+  display: inline;
+}
+.logo img {
+  width: 50px;
+}
+h1 {
+  font-size: 20px;
+  margin: 25px;
+}
+.images {
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.image-conteiner img {
+  width: 150px;
+  transition: 0.3s ease-in-out;
+}
+.image-conteiner img:hover {
+  transform: scale(1.5);
+}
+.image-conteiner {
+  box-sizing: border-box;
+  border: 2px solid #7a1901;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 180px;
+  width: 200px;
+  margin-bottom: 15px;
+}
